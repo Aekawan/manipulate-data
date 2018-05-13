@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WeekTable from './Component/WeekTable'
+import WeekTable from './components/WeekTable'
 
 import { connect } from "react-redux";
 
