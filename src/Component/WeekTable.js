@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CardWeek from './CardWeek'
+import WeekColumn from './WeekColumn'
 
 export default class WeekTable extends Component {
     constructor(props) {
@@ -43,13 +43,13 @@ export default class WeekTable extends Component {
         let { sunData, monData, tueData, wedData, thuData, friData, satData } = this.state
         return (
             <div className="container">
-                <CardWeek title={"SUN"} data={sunData} />
-                <CardWeek title={"MON"} data={monData} />
-                <CardWeek title={"TUE"} data={tueData} />
-                <CardWeek title={"WED"} data={wedData} />
-                <CardWeek title={"THU"} data={thuData} />
-                <CardWeek title={"FRI"} data={friData} />
-                <CardWeek title={"SAT"} data={satData} />
+                <WeekColumn title={"SUN"} data={sunData} />
+                <WeekColumn title={"MON"} data={monData} />
+                <WeekColumn title={"TUE"} data={tueData} />
+                <WeekColumn title={"WED"} data={wedData} />
+                <WeekColumn title={"THU"} data={thuData} />
+                <WeekColumn title={"FRI"} data={friData} />
+                <WeekColumn title={"SAT"} data={satData} />
             </div>
         )
     }
