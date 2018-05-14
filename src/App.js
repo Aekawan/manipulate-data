@@ -13,7 +13,7 @@ class App extends Component {
     return new Date(timestamp * 1000).getDay()
   }
 
-  findDay = (users = []) => {
+  groupDay = (users = []) => {
     const sunData = [], monData = [], tueData = [], wedData = [], thuData = [], friData = [], satData = []
     for (let user of users) {
       let rawDate = user.birthday.raw
@@ -48,7 +48,7 @@ class App extends Component {
           fetching === true ? <p className="App-intro">loading.....</p> : null
         }
         {
-          users ? <WeekTable data={this.findDay(this.props.users)} /> : null
+          users ? <WeekTable data={this.groupDay(this.props.users)} /> : null
         }
         {
           error ? <div>error.....</div> : null
