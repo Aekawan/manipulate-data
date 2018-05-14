@@ -9,7 +9,7 @@ class App extends Component {
     this.props.onRequestUsers()
   }
 
-  parseDay = (timestamp) => {
+  parseDay = (timestamp = null) => {
     return new Date(timestamp * 1000).getDay()
   }
 

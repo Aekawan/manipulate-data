@@ -5,7 +5,7 @@ export default function UserList({ data }) {
         <div className="card-item" key={i}>
             <img className="img-card" src={u.photo} alt={u.name}></img>
             <div className="card-body">
-             <p>{u.name}</p>
+                <p>{u.name}</p>
             </div>
         </div>
     );
