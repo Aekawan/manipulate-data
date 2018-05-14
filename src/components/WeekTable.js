@@ -3,7 +3,7 @@ import WeekColumn from './WeekColumn'
 
 export default function WeekTable({ data }) {
     
-    const itemList = data.map((user, i) => <WeekColumn key={i} title={createTitle(user.group_name)} data={user.data} />)
+    const listItems = data.map((user, i) => <WeekColumn key={i} title={createTitle(user.group_name)} data={user.data} />)
 
     function createTitle(name) {
         return name.substr(0, 3).toUpperCase()
@@ -12,7 +12,7 @@ export default function WeekTable({ data }) {
     return (
         <div className="container">
             {
-                itemList
+                listItems
             }
         </div>
     )
